@@ -18,7 +18,7 @@ namespace DotNetCoreKoans.Koans
         {
             float f = 1.5f;
 
-            Assert.Equal(f, 1.5f);
+            Assert.Equal(1.5f, f);
 
             //Floating Point numbers are able to keep data beyond the decimal point
             //unlike Integers which are whole numbers.
@@ -72,8 +72,8 @@ namespace DotNetCoreKoans.Koans
             var sevenDigits = 0.9999999f;
             var eightDigits = 0.99999999f;
         
-            Assert.Equal(sevenDigits, 0.9999999f);
-            Assert.Equal(eightDigits, 1);
+            Assert.Equal(0.9999999f, sevenDigits);
+            Assert.Equal(1, eightDigits);
 
             //Remember how floats are "Single Precision"?
             //What does that actually mean?
@@ -98,7 +98,7 @@ namespace DotNetCoreKoans.Koans
         {
             var f = 0.3f + 0.6f;
 
-            Assert.Equal(f, 0.9f, 6); // equal within 6 decimal places
+            Assert.Equal(0.9f, f, 6); // equal within 6 decimal places
 
             //Math with floating point numbers doesn't always behave how humans expect.
             //This is because floating point numbers are stored in binary,

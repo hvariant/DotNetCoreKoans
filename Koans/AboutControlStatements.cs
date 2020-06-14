@@ -20,7 +20,7 @@ namespace DotNetCoreKoans.Koans
                 b = false;
             }
 
-            Assert.Equal(true, b);
+            Assert.True(b);
         }
 
         [Step(2)]
@@ -32,7 +32,7 @@ namespace DotNetCoreKoans.Koans
             else
                 b = false;
 
-            Assert.Equal(true, b);
+            Assert.True(b);
 
         }
 
@@ -45,7 +45,7 @@ namespace DotNetCoreKoans.Koans
                 b = true;
             }
 
-            Assert.Equal(true, b);
+            Assert.True(b);
         }
 
         [Step(4)]
@@ -55,7 +55,7 @@ namespace DotNetCoreKoans.Koans
             if (true)
                 b = true;
 
-            Assert.Equal(true, b);
+            Assert.True(b);
         }
 
         [Step(5)]
@@ -70,8 +70,8 @@ namespace DotNetCoreKoans.Koans
                 b1 = true;
                 b2 = true;
 
-			Assert.Equal(false, b1);
-			Assert.Equal(true, b2);
+			Assert.False(b1);
+			Assert.True(b2);
         }
 
         [Step(6)]
@@ -121,10 +121,9 @@ namespace DotNetCoreKoans.Koans
             if (myType is AboutMethods)
                 isAboutMethods = true;
 
-            Assert.Equal(true, isKoan);
-            Assert.Equal(true, isAboutControlStatements);
-            Assert.Equal(false, isAboutMethods);
-
+            Assert.True(isKoan);
+            Assert.True(isAboutControlStatements);
+            Assert.False(isAboutMethods);
         }
 
         [Step(10)]

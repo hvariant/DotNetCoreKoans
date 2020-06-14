@@ -152,7 +152,7 @@ namespace DotNetCoreKoans.Koans
             int b = 4;
 
             //Here goes your implementation to set value to FILL_ME_IN
-            Assert.Equal(HalfAdder(a, b), 19);
+            Assert.Equal(19, HalfAdder(a, b));
         }
     }
 }

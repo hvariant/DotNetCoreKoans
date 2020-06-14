@@ -285,16 +285,16 @@ namespace DotNetCoreKoans.Koans
 		{
 			Dictionary<string, string> dictionary = new Dictionary<string, string>();
 			dictionary["one"] = "uno";
-			Assert.Equal(true, dictionary.ContainsKey("one"));
-			Assert.Equal(false, dictionary.ContainsKey("two"));
+			Assert.True(dictionary.ContainsKey("one"));
+			Assert.False(dictionary.ContainsKey("two"));
 		}
 		[Step(28)]
 		public void ValueExists()
 		{
 			Dictionary<string, string> dictionary = new Dictionary<string, string>();
 			dictionary["one"] = "uno";
-			Assert.Equal(true, dictionary.ContainsValue("uno"));
-			Assert.Equal(false, dictionary.ContainsValue("dos"));
+			Assert.True(dictionary.ContainsValue("uno"));
+			Assert.False(dictionary.ContainsValue("dos"));
 		}
 		[Step(29)]
 		public void AddingDataViaSubscript()
